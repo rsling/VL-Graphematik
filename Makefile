@@ -27,7 +27,7 @@ L04FLAGS = \def\TITLE{4. Phonographisches Schreibprinzip | Konsonanten}\def\LECT
 
 H05JOB = 05$(FILEPRE)$(HOSUFF)
 P05JOB = 05$(FILEPRE)$(PRESUFF)
-L05FLAGS = \def\TITLE{5. Phonographisches Schreibprinzip | Vokale und Probleme}\def\LECTURE{05}
+L05FLAGS = \def\TITLE{5. Phonographisches Schreibprinzip | Vokale}\def\LECTURE{05}
 
 H06JOB = 06$(FILEPRE)$(HOSUFF)
 P06JOB = 06$(FILEPRE)$(PRESUFF)
