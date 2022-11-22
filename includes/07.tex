@@ -8,6 +8,168 @@
   \end{itemize}
 \end{frame}
 
+\section{Eszett}
+
+\newcommand{\phopro}{\ensuremath{\Rightarrow}}
+
+\begin{frame}
+  {Analyse des Eszett}
+  \pause
+  \begin{itemize}[<+->]
+    \item \alert{Alle Positionen bis auf die \textit{ß}-Umgebung sind herleitbar:}
+      \begin{itemize}[<+->]
+        \item Wortanlaut (\textit{Sog} [zoːk]): zugrundeliegendes /z/ bleibt [z]
+        \item Wortauslaut (\textit{Mus} [muːs]): zugrundeliegendes /z/ würde sowieso [s]\\
+          wegen Endrand-Desonorisierung
+        \item Wortinneren nach ungespanntem Vokal (\textit{Masse} [maṣə]): \alert{Silbengelenk}\\
+          immer stimmlos wegen Endranddesonorisierung (/măzə/ undenkbar)
+      \end{itemize}
+      \Halbzeile
+    \item \alert{Bis hierhin brauchen wir noch kein zugrundeliegendes /s/!}
+      \Halbzeile
+    \item zugrundeliegendes /s/ \rot{nur für das Wortinnere nach gespanntem Vokal}\\
+      \textit{Straße} [ʃtʁaːsə] gegenüber \textit{Hase} [haːzə]
+    \item \alert{Und wenn statt /s/ einfach /zz/ zugrundeliegt?}
+    \item \alert{Und wenn /zz/ mit \textit{ß} geschrieben wird?}
+    \item also: \textit{Bußen} als /buzzən/ \phopro [buːssən]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {Eszett-Silben und die anderen \textit{s}}
+  \pause
+  \centering
+  {\footnotesize\textit{Busen}:}\hspace{1em}\scalebox{0.55}{%
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim
+            [Kern, ake
+              [uː]
+            ]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [z]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }~\pause\hspace{1.5em}{\footnotesize\textit{Bussen}:}\hspace{1em}\scalebox{0.55}{%
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ʊ]
+            ]
+            [Er., ake, name=BusenEr]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [s]
+            {\draw[-] (.north) -- (BusenEr.south);}
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }\\
+  \pause
+  \Zeile
+  {\footnotesize\textit{Bußen} mit \alert{Endranddesonorisierung} und \orongsch{Assimilation}:}\hspace{1em}\scalebox{0.55}{%  
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [uː]
+            ]
+            [Er., ake
+              [\alert{\textbf{s}}]
+            ]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [\orongsch{\textbf{s}}]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }
+\end{frame}
+
+
+\begin{frame}
+  {Schritt für Schritt}
+  \pause
+  \begin{enumerate}[<+->]
+    \item zugrundeliegende Form: \alert{/buzzən/}
+    \item Silbifizierung \phopro \{buz\orongsch{.}zən\}
+    \item Längung gespannter Vokale \phopro \{b\orongsch{uː}z.zən\}
+    \item Endranddesonorisierung \phopro \{buː\orongsch{s}.zən\}
+    \item Assimilation des Anfangsrands \phopro \alert{[buːs.}\orongsch{s}\alert{ən]}
+  \end{enumerate}
+  \pause
+  \begin{itemize}[<+->]
+    \item Ist die Assimilation ein Taschenspielertrick?
+    \item Nein, denn sie findet auch in anderen Fällen statt!
+  \end{itemize}
+  \pause
+  \begin{exe}
+    \ex\label{ex:dehnungsundschaerfungsschreibungen024}
+    \begin{xlist}
+      \ex{\label{ex:dehnungsundschaerfungsschreibungen025} /ɛ̆k\alert{z}ə/ \phopro\ [ʔɛk.\orongsch{s}ə] (\textit{Echse})}
+      \pause
+      \ex{\label{ex:dehnungsundschaerfungsschreibungen026} /ɛ̆ʁb\alert{z}e/ \phopro\ [ʔɛ͡əp.\orongsch{s}ə] (\textit{Erbse})}
+    \end{xlist}
+  \end{exe}
+  \pause
+  \begin{itemize}[<+->]
+    \item Also ist das Konsonantenzeichen \textit{s} \rot{nicht} doppelt belegt.
+    \item \alert{Es gibt zugrundeliegend nur /z/.}
+  \end{itemize}
+\end{frame}
+
+
 \section[Konstanz]{Konstantschreibung}
 
 \begin{frame}
