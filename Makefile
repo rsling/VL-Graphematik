@@ -31,11 +31,11 @@ L05FLAGS = \def\TITLE{5. Phonographisches Schreibprinzip | Vokale}\def\LECTURE{0
 
 H06JOB = 06$(FILEPRE)$(HOSUFF)
 P06JOB = 06$(FILEPRE)$(PRESUFF)
-L06FLAGS = \def\TITLE{6. Schärfung und Dehnung}\def\LECTURE{06}
+L06FLAGS = \def\TITLE{6. Silben und Dehnungsschreibung}\def\LECTURE{06}
 
 H07JOB = 07$(FILEPRE)$(HOSUFF)
 P07JOB = 07$(FILEPRE)$(PRESUFF)
-L07FLAGS = \def\TITLE{7. Konstantschreibung und Überblick}\def\LECTURE{07}
+L07FLAGS = \def\TITLE{7. Dehnung und Konstantschreibung}\def\LECTURE{07}
 
 H08JOB = 08$(FILEPRE)$(HOSUFF)
 P08JOB = 08$(FILEPRE)$(PRESUFF)
