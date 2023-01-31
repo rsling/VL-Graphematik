@@ -49,18 +49,6 @@ H10JOB = 10$(FILEPRE)$(HOSUFF)
 P10JOB = 10$(FILEPRE)$(PRESUFF)
 L10FLAGS = \def\TITLE{10. Punkt und sonstige Interpunktion}\def\LECTURE{10}
 
-H11JOB = 11$(FILEPRE)$(HOSUFF)
-P11JOB = 11$(FILEPRE)$(PRESUFF)
-L11FLAGS = \def\TITLE{11. Gebrauchsbasiert vs.\ falsch | Klitische Artikel}\def\LECTURE{11}
-
-H12JOB = 12$(FILEPRE)$(HOSUFF)
-P12JOB = 12$(FILEPRE)$(PRESUFF)
-L12FLAGS = \def\TITLE{12. Gebrauchsbasiert vs.\ falsch | Univerbierung}\def\LECTURE{12}
-
-H13JOB = 13$(FILEPRE)$(HOSUFF)
-P13JOB = 13$(FILEPRE)$(PRESUFF)
-L13FLAGS = \def\TITLE{13. Gebrauchsbasiert vs.\ falsch | V2, VL und die Interpunktion}\def\LECTURE{13}
-
 FULLJOB = $(FILEPRE)Handout
 
 
@@ -243,60 +231,6 @@ p10: create
 
 p10q: create
 	$(LX) $(TEXFLAGS) -jobname=$(P10JOB) "$(L10FLAGS)$(FINALFLAGS)"
-
-
-h11: create
-	$(LX) $(TEXFLAGS) -jobname=$(H11JOB) $(PREFLAGS) "$(L11FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(H11JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(H11JOB) "$(L11FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-h11q: create
-	$(LX) $(TEXFLAGS) -jobname=$(H11JOB) "$(L11FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-p11: create
-	$(LX) $(TEXFLAGS) -jobname=$(P11JOB) $(PREFLAGS) "$(L11FLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(P11JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(P11JOB) "$(L11FLAGS)$(FINALFLAGS)"
-
-p11q: create
-	$(LX) $(TEXFLAGS) -jobname=$(P11JOB) "$(L11FLAGS)$(FINALFLAGS)"
-
-
-
-h12: create
-	$(LX) $(TEXFLAGS) -jobname=$(H12JOB) $(PREFLAGS) "$(L12FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(H12JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(H12JOB) "$(L12FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-h12q: create
-	$(LX) $(TEXFLAGS) -jobname=$(H12JOB) "$(L12FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-p12: create
-	$(LX) $(TEXFLAGS) -jobname=$(P12JOB) $(PREFLAGS) "$(L12FLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(P12JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(P12JOB) "$(L12FLAGS)$(FINALFLAGS)"
-
-p12q: create
-	$(LX) $(TEXFLAGS) -jobname=$(P12JOB) "$(L12FLAGS)$(FINALFLAGS)"
-
-
-h13: create
-	$(LX) $(TEXFLAGS) -jobname=$(H13JOB) $(PREFLAGS) "$(L13FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(H13JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(H13JOB) "$(L13FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-h13q: create
-	$(LX) $(TEXFLAGS) -jobname=$(H13JOB) "$(L13FLAGS)$(HANDIFLAGS)$(FINALFLAGS)"
-
-p13: create
-	$(LX) $(TEXFLAGS) -jobname=$(P13JOB) $(PREFLAGS) "$(L13FLAGS)$(FINALFLAGS)"
-	cd ./output; $(BX) $(P13JOB)
-	$(LX) $(TEXFLAGS) -jobname=$(P13JOB) "$(L13FLAGS)$(FINALFLAGS)"
-
-p13q: create
-	$(LX) $(TEXFLAGS) -jobname=$(P13JOB) "$(L13FLAGS)$(FINALFLAGS)"
-
-
 
 full: create
 	$(LX) $(TEXFLAGS) -jobname=$(FULLJOB) $(PREFLAGS) "$(HANDIFLAGS)$(FINALFLAGS)"
