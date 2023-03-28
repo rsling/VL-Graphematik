@@ -1,0 +1,364 @@
+\section{Übersicht}
+
+\begin{frame}
+  {Übersicht}
+  \onslide<+->
+  \begin{itemize}[<+->]
+    \item Wozu brauchen wir das \alert{Eszett}?
+      \Zeile
+    \item \alert{Konstanzprinzip} | Stämme möglichst konstant schreiben
+      \Zeile
+    \item Fazit | \rot{Kann die Dehnungsschreibung weg?}
+      \Zeile
+    \item \citet{Schaefer2018b}
+  \end{itemize}
+\end{frame}
+
+
+\section{Eszett}
+
+\newcommand{\phopro}{\ensuremath{\Rightarrow}}
+
+\begin{frame}
+  {Analyse des Eszett}
+  \pause
+  \begin{itemize}[<+->]
+    \item \alert{Alle Positionen bis auf die \textit{ß}-Umgebung sind herleitbar:}
+      \begin{itemize}[<+->]
+        \item Wortanlaut (\textit{Sog} [zoːk]): zugrundeliegendes /z/ bleibt [z]
+        \item Wortauslaut (\textit{Mus} [muːs]): zugrundeliegendes /z/ würde sowieso [s]\\
+          wegen Endrand-Desonorisierung
+        \item Wortinneren nach ungespanntem Vokal (\textit{Masse} [maṣə]): \alert{Silbengelenk}\\
+          immer stimmlos wegen Endranddesonorisierung (/măzə/ undenkbar)
+      \end{itemize}
+      \Halbzeile
+    \item \alert{Bis hierhin brauchen wir noch kein zugrundeliegendes /s/!}
+      \Halbzeile
+    \item zugrundeliegendes /s/ \rot{nur für das Wortinnere nach gespanntem Vokal}\\
+      \textit{Straße} [ʃtʁaːsə] gegenüber \textit{Hase} [haːzə]
+    \item \alert{Und wenn statt /s/ einfach /zz/ zugrundeliegt?}
+    \item \alert{Und wenn /zz/ mit \textit{ß} geschrieben wird?}
+    \item also: \textit{Bußen} als /buzzən/ \phopro [buːssən]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {Eszett-Silben und die anderen \textit{s}}
+  \pause
+  \centering
+  {\footnotesize\textit{Busen}:}\hspace{1em}\scalebox{0.55}{%
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim
+            [Kern, ake
+              [uː]
+            ]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [z]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }~\pause\hspace{1.5em}{\footnotesize\textit{Bussen}:}\hspace{1em}\scalebox{0.55}{%
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ʊ]
+            ]
+            [Er., ake, name=BusenEr]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [s]
+            {\draw[-] (.north) -- (BusenEr.south);}
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }\\
+  \pause
+  \Zeile
+  {\footnotesize\textit{Bußen} mit \alert{Endranddesonorisierung} und \orongsch{Assimilation}:}\hspace{1em}\scalebox{0.55}{%  
+    \begin{forest}
+      for tree={s sep+=1em}
+      [Phonologisches Wort, calign=first
+        [Silbe, calign=last
+          [Ar., ake
+            [b]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [uː]
+            ]
+            [Er., ake
+              [\alert{\textbf{s}}]
+            ]
+          ]
+        ]
+        [Silbe, calign=last
+          [Ar., ake, baseline
+            [\orongsch{\textbf{s}}]
+          ]
+          [Reim, calign=first
+            [Kern, ake
+              [ə]
+            ]
+            [Er., ake
+              [n]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  }
+\end{frame}
+
+
+\begin{frame}
+  {Schritt für Schritt}
+  \pause
+  \begin{enumerate}[<+->]
+    \item zugrundeliegende Form: \alert{/buzzən/}
+    \item Silbifizierung \phopro \{buz\orongsch{.}zən\}
+    \item Längung gespannter Vokale \phopro \{b\orongsch{uː}z.zən\}
+    \item Endranddesonorisierung \phopro \{buː\orongsch{s}.zən\}
+    \item Assimilation des Anfangsrands \phopro \alert{[buːs.}\orongsch{s}\alert{ən]}
+  \end{enumerate}
+  \pause
+  \begin{itemize}[<+->]
+    \item Ist die Assimilation ein Taschenspielertrick?
+    \item Nein, denn sie findet auch in anderen Fällen statt!
+  \end{itemize}
+  \pause
+  \begin{exe}
+    \ex\label{ex:dehnungsundschaerfungsschreibungen024}
+    \begin{xlist}
+      \ex{\label{ex:dehnungsundschaerfungsschreibungen025} /ɛ̆k\alert{z}ə/ \phopro\ [ʔɛk.\orongsch{s}ə] (\textit{Echse})}
+      \pause
+      \ex{\label{ex:dehnungsundschaerfungsschreibungen026} /ɛ̆ʁb\alert{z}e/ \phopro\ [ʔɛ͡əp.\orongsch{s}ə] (\textit{Erbse})}
+    \end{xlist}
+  \end{exe}
+  \pause
+  \begin{itemize}[<+->]
+    \item Also ist das Konsonantenzeichen \textit{s} \rot{nicht} doppelt belegt.
+    \item \alert{Es gibt zugrundeliegend nur /z/.}
+  \end{itemize}
+\end{frame}
+
+
+\section[Konstanz]{Konstantschreibung}
+
+\begin{frame}
+  {Zur Erinnerung: unerklärte Doppelkonsonanten}
+  \pause
+  \centering
+  \resizebox{0.7\textwidth}{!}{
+    \begin{tabular}{lllllllll}
+      \toprule
+      & & & \textbf{ɪ} & \textbf{ʊ} & \multicolumn{2}{l}{\LocStrutGrph\textbf{ɛ̆}} & \textbf{ɔ} & \textbf{ă} \\
+      \midrule
+
+      \multirow{4}{*}{\rotatebox{90}{\textbf{ungespannt}}}
+
+      & \multirow{2}{*}{\rotatebox{90}{\textbf{offen}}}
+      & \textbf{einsilb.}  & \textit{\Nono}  & \textit{\Nono}           & \multicolumn{2}{l}{\LocStrutGrph\textit{\Nono}}         & \textit{\Nono}        & \textit{\Nono}           \\
+      && \textbf{zweisilb.}  & \textit{Li.\alert{pp}e} & \textit{Fu.\alert{tt}er}         & \multicolumn{2}{l}{\LocStrutGrph\textit{We.\alert{ck}e}}        & \textit{o.\alert{ff}en}       & \textit{wa.\alert{ck}er}         \\
+        & \multirow{2}{*}{\rotatebox{90}{\textbf{gesch.}}}
+        & \textbf{einsilb.}  & \textit{Ki\rot{nn}}   & \textit{Schu\rot{tt}}    & \multicolumn{2}{l}{\LocStrutGrph\textit{Be\rot{tt}}}           & \textit{Ro\rot{ck}}         & \textit{Wa\rot{tt}}            \\
+        && \textbf{zweisilb.}  & \textit{Rin.de} & \textit{Wun.der}        & \multicolumn{2}{l}{\LocStrutGrph\textit{Wen.de}}        & \textit{pol.ter}      & \textit{Tan.te}          \\
+
+      \midrule
+
+      \multirow{4}{*}{\rotatebox{90}{\textbf{gespannt}}}
+
+      & \multirow{2}{*}{\rotatebox{90}{\textbf{offen}}}
+        & \textbf{einsilb.}  & \textit{Knie}   & \textit{Schuh}       & \textit{Schnee, Reh}  & \textit{zäh}          & \textit{roh}          & (\textit{da})            \\
+      && \textbf{zweisilb.}  & \textit{Bie.ne} & \textit{Kuh.le, Schu.le} & \textit{we.nig}       & \textit{Äh.re, rä.kel} & \textit{oh.ne, O.fen} & \textit{Fah.ne, Spa.ten} \\
+
+      & \multirow{2}{*}{\rotatebox{90}{\textbf{gesch.}}}
+        & \textbf{einsilb.}  & \textit{lieb}  & \textit{Ruhm, Glut}      & \textit{Weg}          & \textit{spät}           & \textit{rot}          & \textit{Tat}             \\
+      && \textbf{zweisilb.}  & (\textit{lieb.lich}) & (\textit{lug.te})   & (\textit{red.lich})   & (\textit{wähl.te})     & (\textit{brot.los})   & (\textit{rat.los})       \\
+
+      \midrule
+      & & & \textbf{i} & \textbf{u} & \textbf{e} & \textbf{ε} & \textbf{o} & \textbf{a} \\
+
+      \bottomrule
+    \end{tabular}
+  }
+\end{frame}
+
+\begin{frame}
+  {Lösung | Konstanz}
+  \begin{itemize}[<+->]
+    \item Warum \textit{Kinn}, \textit{Schutt}, \textit{Bett}, \textit{Rock}, \textit{Wattes}?
+      \Halbzeile
+    \item \alert{nicht unterlassbare Gelenkschreibungen}
+      \begin{itemize}[<+->]
+        \item \textit{die Ki\alert{nn}e}
+        \item \textit{des Schu\alert{tt}es}
+        \item \textit{die Be\alert{tt}en}
+        \item \textit{die Rö\alert{ck}e}
+      \end{itemize}
+      \Halbzeile
+    \item \alert{Die Schreibungen eines Stamms einander angleichen!} Sonst:
+      \begin{itemize}[<+->]
+        \item \textit{*Kin --- Kinne}
+        \item \textit{Schut --- Schutt}
+        \item \textit{Bet --- Betten}
+        \item \textit{Rok --- Röcke}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {Andere Konstantschreibungen}
+  \pause
+  \begin{itemize}[<+->]
+    \item andere Wortklassen
+      \begin{itemize}[<+->]
+        \item \textit{*plat --- pla\rot{tt} --- pla\alert{tt}er}
+        \item \textit{*as --- a\rot{ß} --- a\alert{ß}en}
+        \item aber: \textit{las --- lasen}
+        \item \textit{*schlizte --- schli\rot{tz}te --- schli\alert{tz}en}
+      \end{itemize}
+      \Halbzeile
+    \item andere Phänomene (nicht Silbengelenk oder \textit{ß})
+      \begin{itemize}[<+->]
+        \item \textit{*gest --- ge\rot{h}st --- ge\alert{h}en}
+        \item \textit{*siest --- sie\rot{h}st --- se\alert{h}en}
+        \item \textit{*Reume --- R\rot{äu}me --- R\alert{au}m}
+        \item \textit{*leuft --- l\rot{äu}ft --- l\alert{au}fen}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\section{Schärfung + Konstanz = überflüssige Dehnung}
+
+\begin{frame}
+  {Das Kreuz mit der Dehnungsschreibung}
+  \pause
+  \begin{itemize}[<+->]
+    \item Dehnungs-\textit{h} (\textit{Reh}, \textit{Pfahl}) oder Dehnungs-Doppelvokal (\textit{Saat}, \textit{Boot})
+    \item speziell bei \textit{i} (dort fast immer): Dehnungs-\textit{e} (\textit{Knie}, \textit{Dieb})
+      \Halbzeile
+    \item \alert{weitgehend redundant} (erst recht im Kern)
+    \item \alert{unsystematisch} (\textit{Lid}, \textit{Lied} usw.)
+      \Halbzeile
+    \item mangels Systematik: \alert{oft Erwerbsprobleme}
+    \item \ldots\ denen kaum systematisch zu begenen ist
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {Erinnerung | Realisierungen der Dehnungsschreibung}
+  \onslide<+->
+  \onslide<+->
+  Gespanntheitsmarkierung |\\
+  \alert{h}, \orongsch{nichts}, \grau{Doppelvokal} oder bei <i> die \alert{<ie>-Schreibung}\\
+  \Zeile
+  \begin{tabular}{llllll}
+    /i/ &           \rot{*<ih>} & \alert{<ie>} & \orongsch{<i>} &          \rot{*<ii>} & \textit{R\alert{ie}men}, \textit{\orongsch{I}gel}, *\textit{Kn\rot{ii}b}, *\textit{Kn\rot{ih}p} \\
+    /y/ & \whyte{*}\alert{<üh>} &              & \orongsch{<ü>} &          \rot{*<üü>} & \textit{B\alert{üh}ne}, \textit{m\orongsch{ü}de}, *\textit{B\rot{üü}ke} \\
+    /e/ & \whyte{*}\alert{<eh>} &              & \orongsch{<e>} & \whyte{*}\grau{<ee>} & \textit{k\alert{eh}ren}, \textit{w\orongsch{e}nig}, \textit{S\grau{ee}} \\
+    /ɛ/ & \whyte{*}\alert{<äh>} &              & \orongsch{<ä>} &          \rot{*<ää>} & \textit{\alert{Äh}re}, \textit{d\orongsch{ä}nisch}, *\textit{S\rot{ää}le} \\
+    /ø/ & \whyte{*}\alert{<öh>} &              & \orongsch{<ö>} &          \rot{*<öö>} & \textit{st\alert{öh}nen}, \textit{fl\orongsch{ö}ten}, *\textit{d\rot{öö}fer} \\
+    /u/ & \whyte{*}\alert{<uh>} &              & \orongsch{<u>} &          \rot{*<uu>} & \textit{K\alert{uh}le}, \textit{Sch\orongsch{u}le}, *\textit{Kr\rot{uu}fe} \\
+    /o/ & \whyte{*}\alert{<oh>} &              & \orongsch{<o>} & \whyte{*}\grau{<oo>} & \textit{L\alert{oh}n}, \textit{B\orongsch{o}den}, \textit{d\grau{oo}f} \\
+    /a/ & \whyte{*}\alert{<ah>} &              & \orongsch{<a>} & \whyte{*}\grau{<aa>} & \textit{W\alert{ah}n}, \textit{b\orongsch{a}den}, \textit{\grau{Aa}l} \\
+  \end{tabular}\\
+  \Zeile 
+  \onslide<+->
+  <i>, <u> und Umlautgraphen können nicht gedoppelt werden!
+\end{frame}
+
+
+\begin{frame}
+  {Redundanz von Dehnungsschreibungen im Kern}
+  \alert{Ausnahmslosigkeit der Schärfungsschreibung} und \\
+  \alert{Konstanzprinzip} führen zu \rot{Redundanz der Dehnungsschreibung}\\
+  \Zeile
+  \onslide<+->
+  \centering 
+  \begin{tabular}{llll}
+    \toprule
+    \textbf{Graph} & \textbf{Ortho.} & \alert{\textbf{Ohne DS}} & \rot{\textbf{wäre V kurz}} \\
+    \midrule
+    <ie> & Lied -- Lieder & \alert{Lid -- Lider} & \rot{Lidd -- Lidder} \\
+    <üh> & Bühne & \alert{Büne} & \rot{Bünne} \\ 
+    <eh> & kehr -- kehren & \alert{ker -- keren} & \rot{kerr -- kerren} \\ 
+    <äh> & Ähre & \alert{Äre} & \rot{Ärre} \\ 
+    <aa> & Saal -- Säle & \alert{Sal -- Säle} & \rot{Säll -- Sälle} \\
+    <öh> & stöhn -- stöhnen & \alert{stön -- stönen} & \rot{stönn -- stönnen} \\
+    <uh> & Kuhle & \alert{Kule} & \rot{Kulle} \\ 
+    <oh> & Lohn -- Löhne & \alert{Lon -- Löne} & \rot{Lönn -- Lönne} \\ 
+    <ah> & Wahn -- Wahnes & \alert{Wan -- Wanes} & \rot{Wann -- Wannes} \\ 
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  {Kann das weg?}
+  \onslide<+->
+  \onslide<+->
+  \Large \alert{Die Dehnungsschreibung ist\\
+  vom System aus gesehen entbehrlich.}\\
+  \Zeile
+  \onslide<+->
+  \alert{Sie ist unsystematisch und nicht regelhaft lernbar.}\\
+  \Zeile
+  \onslide<+->
+  \rot{Wir brauchen die Dehnungsschreibung nicht!}
+\end{frame}
+
+
+\ifdefined\TITLE
+  \section{Nächste Woche | Überblick}
+
+  \begin{frame}
+    {Der ungefähre Semesterplan}
+    \begin{enumerate}[<+->]
+      \item Graphematik und Schreibprinzipien
+      \item Wiederholung -- Phonetik
+      \item Wiederholung -- Phonologie
+      \item Phonographisches Schreibprinzip -- Konsonanten
+      \item Phonographisches Schreibprinzip -- Vokale
+      \item Silben und Dehnungsschreibungen
+      \item Eszett, Dehnung und Konstanz
+      \item \alert{Spatien und Majuskeln}
+      \item Komma
+      \item Punkt und sonstige Interpunktion
+    \end{enumerate}
+  \end{frame}
+\fi
