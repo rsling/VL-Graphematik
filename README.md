@@ -1,1 +1,3 @@
-# VL Schrift und Schreibung im Deutschen
+# VL Graphematik
+Roland Schäfer, Germanistische Linguistik, FSU Jena 
+Professur für Grammatik und Lexikon 
