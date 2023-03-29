@@ -10,8 +10,6 @@
     \item Probleme
       \Zeile
     \item Empirie | \textit{obwohl} und \textit{weil} mit V2
-      \Zeile
-    \item \citet{Schaefer2018b,SchaeferSayatz2016}
   \end{itemize}
 \end{frame}
 
@@ -357,8 +355,9 @@
   \end{forest}}
 \end{frame}
 
+
 \begin{frame}
-  {Probleme | Inkohärente Infinitve}
+  {Probleme | (In)kohärente Infinitve}
   \onslide<+->
   \onslide<+->
     \resizebox{1\textwidth}{!}{
@@ -376,7 +375,7 @@
   \Zeile
   \begin{itemize}[<+->]
     \item Nur \alert{inkohärente nachgestellte Infinitive} werden kommatiert!
-    \item Sie gelten als satzwertig, aber \rot{Inkohärenz leider nur optional}.
+    \item Sie gelten als satzwertig, aber die \rot{Inkohärenz ist leider nur optional}.
     \item Es kommen also nur \alert{Abhängige von Kontrollverben} infrage.
   \end{itemize}
   \onslide<+->
@@ -388,7 +387,7 @@
 \end{frame}
 
 \begin{frame}
-  {Probleme | Inkohärente Infinitve}
+  {Probleme | (In)kohärente Infinitve}
   \onslide<+->
   \onslide<+->
   Was ist jetzt hiermit?\\
@@ -407,7 +406,7 @@
     \ex \rot{\textbf{Inkohärent}}
     \begin{xlist}
       \ex[ ]{\ldots dass Nadezhda beschließt, keine Steroide mehr zu nehmen.}
-      \ex[*]{\ldots dass Nadezhda keine Steroide mehr zu nehmen beschließt.}
+      \ex[?]{\ldots dass Nadezhda keine Steroide mehr zu nehmen beschließt.}
     \end{xlist}
     \ex \alert{\textbf{Kohärent oder inkohärent}}
     \begin{xlist}
@@ -419,23 +418,23 @@
 
 
 \begin{frame}
-  {Probleme | Inkohärente Infinitve}
+  {Probleme | (In)kohärente Infinitve}
   Es liegt also an der syntaktischen Struktur.\\
   \Zeile
   \onslide<+->
   \begin{exe}
     \ex
     \begin{xlist}
-      \ex[ ]{[Nadezhda]\Sub{2} \alert{[beschließt]\Sub{1}} [t\Sub{2} \gruen{t\Sub{3}} \alert{[t\Sub{1}]\Sub{VK}}]\ \Sub{VP}\ \orongsch{,}\\
-        {\hspace{1em}}\gruen{[keine Steroide mehr einzunehmen]\Sub{3}}.}
+      \ex[ ]{[Nadezhda]\Sub{2} \alert{[beschließt]\Sub{1}} [[t\Sub{2} \gruen{t\Sub{3}} \alert{[t\Sub{1}]\Sub{VK}}]\ \Sub{VP}\ \orongsch{,}\\
+      {\hspace{1em}}\gruen{[keine Steroide mehr einzunehmen]\Sub{3}}]\Sub{VP}.}
         \Viertelzeile
       \ex[*]{[Nadezhda]\Sub{2} \rot{[beschließt]\Sub{1}}\\
-        {\hspace{1em}}[t\Sub{2} [keine Steroide] [mehr] \rot{[einzunehmen t\Sub{1}]\Sub{VK}}\ ]\Sub{VP}.}
+      {\hspace{1em}}[t\Sub{2} [keine Steroide] [mehr] \rot{[einzunehmen t\Sub{1}]\Sub{VK}}\ ]\Sub{VP}.\label{ex:ohweia}}
     \end{xlist}
     \Halbzeile
     \ex
     \begin{xlist}
-      \ex[ ]{[Nadezhda]\Sub{2} \alert{[beschließt]\Sub{1}}\ \orongsch{,} [t\Sub{2} \gruen{t\Sub{3}} \alert{[t\Sub{1}]\Sub{VK}}\ ]\Sub{VP} \gruen{[zu trainieren]\Sub{3}}.}
+      \ex[ ]{[Nadezhda]\Sub{2} \alert{[beschließt]\Sub{1}}\ \orongsch{,} [[t\Sub{2} \gruen{t\Sub{3}} \alert{[t\Sub{1}]\Sub{VK}}\ ]\Sub{VP} \gruen{[zu trainieren]\Sub{3}}]\Sub{VP}.}
       \Viertelzeile
       \ex[ ]{[Nadezhda]\Sub{2} \tuerkis{[beschließt]\Sub{1}} [t\Sub{2} \tuerkis{[zu trainieren t\Sub{1}]\Sub{VK}}\ ]\Sub{VP}}
     \end{xlist}
@@ -445,6 +444,149 @@
   Füllen Sie den VK durch Hinzufügen von Hilfsverben auf,\\
   um das Phänomen noch deutlicher zu sehen.
 \end{frame}
+
+\begin{frame}
+  {Probleme | Bäume für inkohärente Konstruktion}
+  \onslide<+->
+  \onslide<+->
+  \rot{Inkohärent konstruiert}\\
+  \Zeile
+  \centering 
+  \begin{forest}
+    [S, calign=child, calign child=2
+      [NP\Sub{2}, tier=pt
+        [\it Nadezhda, narroof, tier=t]
+      ]
+      [V\Sub{1}, tier=pt
+        [\it beschließt, tier=t]
+      ]
+      [VP, calign=child, calign child=1
+        [VP, calign=child, calign child=3
+          [\Tii, tier=t]
+          [\rot{\Tiii}, tier=t]
+          [\Ti, tier=t]
+        ]
+        [VP\Sub{3}, tier=pt, rottree
+          [\it keine Steroide mehr einzunehmen, narroof, tier=t]
+        ]
+      ]
+    ]
+  \end{forest}
+\end{frame}
+
+
+\begin{frame}
+  {Probleme | Bäume für inkohärente Konstruktion mit Hilfsverb}
+  \onslide<+->
+  \onslide<+->
+  Dank des Verbs im Verbkomplex \rot{sieht man die Extraktion}\\
+  \Zeile
+  \centering 
+  \begin{forest}
+    [S, calign=child, calign child=2
+      [NP\Sub{2}, tier=pt, tier=pt
+        [\it Nadezhda, tier=t, narroof]
+      ]
+      [V\Sub{1}, tier=pt
+        [\it hat, tier=t]
+      ]
+      [VP, , calign=child, calign child=1
+        [VP, calign=last
+          [\Tii, tier=t, forky]
+          [\rot{\Tiii}, tier=t, forky]
+          [V, calign=last
+            [V, tier=pt
+              [\it beschlossen, tier=t]
+            ]
+            [\Ti, tier=t]
+          ]
+        ]
+        [VP\Sub{3}, tier=pt, rottree
+          [\it keine Steroide mehr einzunehmen, narroof, tier=t]
+        ]
+      ]
+    ]
+  \end{forest}
+\end{frame}
+
+
+\begin{frame}
+  {Probleme | Bäume für kohärente Konstruktion mit Hilfsverb}
+  \onslide<+->
+  \onslide<+->
+  \rot{So gut wie ungrammatisch!}\\
+  \Zeile
+  \centering 
+  \begin{forest}
+    [S, calign=child, calign child=2
+      [NP\Sub{2}, tier=pt
+        [\it Nadezhda, tier=t, narroof]
+      ]
+      [V\Sub{1}, tier=pt
+        [\it hat, tier=t]
+      ]
+      [VP, calign=last
+        [\Tii, tier=t, forky]
+        [NP, tier=pt
+          [\it keine Steroide, narroof, tier=t]
+        ]
+        [AdvP, tier=pt
+          [\it mehr, narroof, tier=t]
+        ]
+        [V, calign=last
+          [V, calign=last
+            [V
+              [\it einzunehmen]
+            ]
+            [V, tier=pt
+              [\it beschlossen, tier=t]
+            ]
+          ]
+          [\Ti, tier=t]
+        ]
+      ]
+    ]
+  \end{forest}
+\end{frame}
+
+\begin{frame}
+  {Probleme | Bäume für kohärente Konstruktion ohne Hilfsverb}
+  \onslide<+->
+  \onslide<+->
+  Man kann daher davon ausgehen, dass diese Struktur auch nicht grammatisch ist.\\
+  \onslide<+->
+  \Viertelzeile
+  Sie entspricht (\ref{ex:ohweia}), also der nicht kommatierten Version.\\
+  \onslide<+->
+  \Zeile
+  \centering
+  \begin{forest}
+    [S, calign=child, calign child=2
+      [NP\Sub{2}, tier=pt
+        [\it Nadezhda, tier=t, narroof]
+      ]
+      [V\Sub{1}, tier=pt
+        [\it beschließt, tier=t]
+      ]
+      [VP, calign=last
+        [\Tii, tier=t, forky]
+        [VP\Sub{3}, tier=pt, rottree
+          [\it keine Steroide, narroof, tier=t]
+        ]
+        [AdvP, tier=pt
+          [\it mehr, narroof]
+        ]
+        [V, calign=last
+          [V, tier=pt
+            [\it einzunehmen]
+          ]
+          [\Ti, tier=t]
+        ]
+      ]
+    ]
+  \end{forest}
+\end{frame}
+
 
 \begin{frame}
   {Probleme | Herausstellungen und Nichtintegration}
@@ -469,6 +611,104 @@
       \rot{entspricht aber nicht der Realität} (s.\ Sayatz und Schäfer i.\,V.)
   \end{itemize}
 \end{frame}
+
+
+\section[Unabhängigkeit]{Unabhängigkeit von Sätzen | \citet{SchaeferSayatz2016}}
+
+
+\begin{frame}
+  {\textit{obwohl} und \textit{weil} mit V2}
+  \citet{SchaeferSayatz2016}\\
+  \Zeile
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/01-obwohl}
+\end{frame}
+
+\begin{frame}
+  {\textit{obwohl} und \textit{weil} mit V2}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/01-weil}
+\end{frame}
+
+\begin{frame}
+  {Variation der Interpunktion (Beispiele)}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/02-interpunktion}
+\end{frame}
+
+\begin{frame}
+  {Unabhängigkeit von Sätzen}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/03-independence} 
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund I | Satzinitiale Partikeln}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/04-satzinitial}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund II/1 | Wortverteilung bei Doppelpunkt}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/05-colon}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund II/2 | Wortverteilung bei Komma}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/05-comma}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund II/3 | Wortverteilung bei Bindestrich}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/05-dash}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund II/4 | Wortverteilung bei Dreipunkt}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/05-ellipsis}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund III/1 | Links von \textit{obwohl}\slash \textit{weil}}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/06-left}
+\end{frame}
+
+\begin{frame}
+  {Empirischer Befund III/2 | Rechts von \textit{obwohl}\slash \textit{weil}}
+  \centering 
+  \includegraphics[width=0.7\textwidth]{\GRAPHPATH/obweil/06-right}
+\end{frame}
+
+\begin{frame}
+  {Ergebnisse}
+  \textit{obwohl} und \textit{weil} mit V2-Satzstellung\\
+  \Zeile
+  \begin{itemize}[<+->]
+    \item \textit{obwohl}
+      \begin{itemize}[<+->]
+        \item leitet mehr unabhängige Sätze ein
+        \item wird öfter vom Komma gefolgt
+        \item Status | \alert{eher Diskurspartikel außerhalb des Satzes}
+        \item ähnlich \textit{ja}, \textit{naja}, \textit{also}, \textit{klar}
+      \end{itemize}
+      \Zeile
+    \item \textit{weil}
+      \begin{itemize}[<+->]
+        \item folgt auch bei V2 eher einem Komma
+        \item oder ganz ohne Interpunktion links
+        \item Komma folgt seltener
+        \item Status | \alert{eher Konnektor im Konnektorfeld}
+        \item ähnlich \textit{denn}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
 
 \ifdefined\TITLE
   \section{Nächste Woche | Überblick}

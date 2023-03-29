@@ -5,7 +5,7 @@ LX = xelatex
 BX = biber
 
 # Project name and file name parts.
-PROJECT = SchaeferSyntax
+PROJECT = SchaeferGraphematik
 HANDOUTSUFF = _Handout_
 SLIDESUFF = _Folien_
 FULL = Komplett
